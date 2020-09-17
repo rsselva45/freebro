@@ -2,9 +2,10 @@
 <html>
 <head>
 	<title>web</title>
+	<link rel="stylesheet" type="text/css" href="chillcss.css">
 </head>
 <body>
-   <h1>pseudo class</h1>
+   <h1 style="text-align:center; font-style: italic; text-transform:uppercase; text-decoration: underline;">top brands of phones</h1>
    <header>
    	<ul>
    		<li><a href="chillbro1.html" title="HOME">HOME</a></li>
@@ -12,19 +13,21 @@
    		<li><a href="chillbro1.html" target="blank">Facebook App</a></li>
    	</ul>
    </header>
- <section>
-<div>DIV1</div>
-<div>DIV2</div>
-<div>DIV3</div>
-<div>DIV4</div>
-<div>DIV5</div>
-<div>DIV6</div>
-<div>DIV7</div>
-<div>DIV8</div>
-<div>DIV9</div>
-<div>DIV10</div>
-</section>
-<h1>THE END</h1>
+ <div class="row">
+<div class="col-lg-3 col-md-6"><p>Asus</p></div>
+<div class="col-lg-3 col-md-6"><p>Oppo</p></div>
+<div class="col-lg-3 col-md-6"><p>Vivo</p></div>
+<div class="col-lg-3 col-md-6"><p>Samsung</p></div>
+<div class="col-lg-3 col-md-6"><p>LG</p></div>
+<div class="col-lg-3 col-md-6"><p>Oneplus</p></div>
+<div class="col-lg-3 col-md-6"><p>Realme</p></div>
+<div class="col-lg-3 col-md-6"><p>Redmi</p></div>
+<div class="col-lg-3 col-md-6"><p>MOTO</p></div>
+<div class="col-lg-3 col-md-6"><p>Poco</p></div>
+<div class="col-lg-3 col-md-6"><p>Hwuaei</p></div>
+<div class="col-lg-3 col-md-6"><p>Honor</p></div>
+<div class="col-lg-12 col-md-12" style="text-transform: uppercase; font-size: 30px;"><p>iqoo</p></div>
+</div>
   <style type="text/css">
  header li
  {
@@ -43,39 +46,142 @@
  	border:5px solid blue;
  	font-weight: 100;
  	font-size: 20px;
- 	cursor: no-drop;
+ 	cursor: auto;
  	 }
  a:hover, a:active
  {
  	background-color: red;
  	color: grey;
  }
-section div:nth-child(even)
+div:nth-child(odd)
 {
-	background-color: orange;
-	color: white;
-	display: block;
-	border:2px solid orange;
-	margin-bottom: 2px;
-	font-style: italic;
-	text-align: center;
-}
-section div:nth-child(odd)
-{
-	background-color: green;
 	color: white;
 	font-style: italic;
-	display: block;
-	border:2px solid orange;
-	margin-bottom: 2px;
 	text-align: center;
+	background-color:black;
 }
+div:nth-child(even)
+{
+	color: white;
+	font-style: italic;
+	text-align: center;
+	background-color:black;
+}
+div:hover, div:active{
+	background-color: gold;
+ 	color: gold;
+}
+*{
+	box-sizing: border-box;
+	margin:0px;
+	padding: 10px;
+}
+.row{
+	width:100%;
+}
+p{
+	border:3px solid gold;
+	border-style: outset;
+	margin-left: auto;
+	background-color:black;
+	margin-right: auto;
+	width:150px;
+	height: 150px;
+	font-family: Charcoal;
+}
+@media(min-width: 1200px){
+	.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12 
+	{
+		float: left;
+		border:1px solid gold;
+		background-color: black;
+		padding: 50px;
+	}
+	.col-lg-1{
+		width: 8.33%;
+	}
+	.col-lg-2{
+		width: 16.66%;
+	}
+	.col-lg-3
+	{
+		width:25%;
+	}
+	.col-lg-4{
+		width:33%;
+	}
+	.col-lg-5
+	{
+		width:41.66%;
+	}
+			.col-lg-6{
+				width:50%;
+			}
+			.col-lg-7{
+				width:58.33%;
+			}
+			.col-lg-8{
+				width:66.66%;
+			}
+			.col-lg-9{
+				width:74.99%;
+			}
+			.col-lg-10{
+				width:83.33%;
+			}
+			.col-lg-11{
+				width:91.66%;
+			}
+			.col-lg-12{
+				width:100%;
+			}
+}
+	@media(min-width: 900px)and (max-width: 1200px){
+		.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12{
+			float:left;
+			background-color: black;
+			margin: 1px solid  gold;
+			padding:50px;
+		}
+		.col-md-1{
+			width: 8.33;
+		}
+		.col-md-2{
+				width:16.66;
+			}
+			.col-md-3{
+				width:25%;
+			}
+			.col-md-4{
+				width:33%;
+			}
+			.col-md-5{
+				width:41.66%;
+			}
+			.col-md-6{
+				width:50%;
+			}
+			.col-md-7{
+				width:58.33%;
+			}
+			.col-md-8{
+				width:66.66%;
+			}
+			.col-md-9{
+				width:74.99%;
+			}
+			.col-md-10{
+				width:83.33%;
+			}
+			.col-md-11{
+				width:91.66%;
+			}
+			.col-md-12{
+				width:100%;
+			}
+	}
  
-h1
-{
-	text-align: middle;
-	font-size: 40px; color: black;
-}
+
  
   </style>
 </body>
