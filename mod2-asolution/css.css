@@ -1,6 +1,9 @@
 		.row{
 			width: 100%;
 		}
+		body{
+			background-color:black;
+		}
 		h1{
 			text-align: center;
 			font-size: 40px;
