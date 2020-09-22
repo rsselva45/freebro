@@ -58,6 +58,8 @@ h1{
 	margin-right:auto;
 	border-radius: 15px;
 	text-align: center;
+	font-style: italic;
+	text-shadow: 0 0 10px;
 	width:175px;
 	height:30px;
 	box-shadow: 0 0 25px #fff;	
@@ -66,6 +68,7 @@ h1{
 {
 	background-color: black;
 	color:gold;
+	font-style: italic;
 
 }
 .para:hover{
